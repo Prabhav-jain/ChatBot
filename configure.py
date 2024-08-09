@@ -1,0 +1,2 @@
+embeddings_api_key = "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"
+groq_api_key = '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'

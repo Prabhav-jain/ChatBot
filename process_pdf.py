@@ -21,7 +21,7 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=20)
 docs = text_splitter.split_documents(documents)
 
 # Set the environment variable for Hugging Face API token
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = api_key
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = embeddings_api_key
 
 # Initialize the embeddings model
 embeddings = HuggingFaceEmbeddings()
